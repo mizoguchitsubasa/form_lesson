@@ -30,6 +30,95 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
+
+            <div class="row name_unit">
+              <div class="name is-halfWidth">
+                <p class="label">名字
+                  <span class="alert">※</span>
+                </p>
+                <input type="text" name="family_name" class="input_area input_init">
+              </div>
+              <div class="name is-halfWidth">
+                <p class="label">名前
+                  <span class="kome">※</span>
+                </p>
+                <input type="text" name="first_name" class="input_area input_init">
+              </div>
+            </div>
+            <div class="row gender_unit">
+              <p class="label">性別</p>
+              <div class="genders">
+                <label class="gender">
+                  <input type="radio" name="gender" value="male" class="input_gender">
+                  <span>男性</span>
+                </label>
+                <label class="gender">
+                  <input type="radio" name="gender" value="female" class="input_gender">
+                  <span>女性</span>
+                </label>
+                <label class="gender">
+                  <input type="radio" name="gender" value="other" class="input_gender">
+                  <span>その他</span>
+                </label>
+              </div>
+            </div>
+            <div class="row origin is-halfWidth">
+              <p class="label">出身</p>
+              <div class="select_origin">
+                <select name="origin" id="origin" class="input_area input_init input_origin">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="row email">
+              <p class="label">Eメール
+                <span class="alert">※</span>
+              </p>
+              <input type="email" class="input_area input_init" name="email" placeholder="ex) hoge@example.com" required>
+            </div>
+            <div class="row tel">
+              <p class="label">電話番号</p>
+              <input type="tel" class="input_area input_init" name="tel" placeholder="ex) 09012345678">
+            </div>
+            <div class="row password">
+              <p class="label">パスワード
+                <span class="alert">※</span>
+              </p>
+              <input type="password" class="input_area input_init" name="password" required>
+            </div>
+            <div class="row password">
+              <p class="label">パスワード(確認用)
+                <span class="alert">※</span>
+              </p>
+              <input type="password" class="input_area input_init" name="password-confirm" required>
+            </div>
+            <div class="row course">
+              <p class="label">希望コース</p>
+              <div class="course_option">
+                <input type="checkbox" name="course" value="frontend" id="frontend">
+                <label class="course_option_text" for="frontend">フロントエンド</label>
+              </div>
+              <div class="course_option">
+                <input type="checkbox" name="course" value="backend" id="backend">
+                <label class="course_option_text" for="backend">バックエンド</label>
+              </div>
+              <div class="course_option">
+                <input type="checkbox" name="course" value="app" id="app">
+                <label class="course_option_text" for="app">アプリ</label>
+              </div>
+            </div>
+            <div class="row remarks">
+              <p class="label">備考</p>
+              <textarea class="input_area input_init" name="remarks" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="row">
+              <input type="submit" value="アカウント作成" class="input_init submit_btn button is-fullWidth">
+            </div>
+
+
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
