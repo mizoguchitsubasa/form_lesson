@@ -131,7 +131,7 @@
   margin-top: 20px;
 }
 
-.row {
+.row:not(:first-child) {
   margin-top: 20px;
 }
 
@@ -144,7 +144,7 @@
 }
 
 .name {
-  margin-left: 15px;
+  margin-left: 16px;
 }
 
 .name:first-child {
@@ -153,6 +153,7 @@
 
 .label {
   color: #545658;
+  display: block;
   font-size: 12px;
 }
 
@@ -178,7 +179,7 @@
   box-sizing: border-box;
   color: #545658;
   font-size: 13px;
-  height: 35px;
+  height: 36px;
   line-height: 2;
   margin-top: 5px;
   padding: 5px;
@@ -195,7 +196,7 @@
   color: #545658;
   display: flex;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .gender {
@@ -212,7 +213,8 @@
 }
 
 .gender span {
-  padding-left: 20px;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
   position: relative;
 }
 
@@ -255,6 +257,10 @@ select {
 
 select::-ms-expand {
   display: none;
+}
+
+.select_origin > .input_area {
+  margin-top: 0;
 }
 
 .select_origin {
@@ -330,7 +336,13 @@ select::-ms-expand {
 }
 
 .submit_btn:hover {
-  background-color: #01bfbd;
+  background-color: #01a6a4;
+}
+
+.submit_btn:active {
+  background-color: #fff;
+  border-color: #d9d9d9;
+  color: #01a6a4;
 }
 
 
